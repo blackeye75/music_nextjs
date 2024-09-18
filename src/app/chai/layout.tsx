@@ -1,16 +1,13 @@
 export default function RootLayout({
     children,
-  }: Readonly<{
+}: Readonly<{
     children: React.ReactNode;
-  }>) {
+}>) {
     return (
-      <html lang="en">
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-          <h1>Nav Items</h1>
-          {children}
-        </body>
-      </html>
+        <>
+            <h1>inner layout item</h1>
+            {children}
+        </>
+
     );
-  }
+}
