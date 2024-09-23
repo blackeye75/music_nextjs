@@ -9,7 +9,7 @@ import Link from "next/link";
 const Navbar = ({ className }: { className?: string }) => {    //arrow function instead of normal function
     const [active, setActive] = useState<string | null>(null);
     return (
-        <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)} >
+        <div className={cn("fixed top-5 inset-x-0 max-w-2xl mx-auto z-50 ", className)} >
             <Menu setActive={setActive}>
                 <Link href={"/"}>
                     <MenuItem setActive={setActive} active={active} item="Home">
@@ -54,14 +54,17 @@ const Navbar = ({ className }: { className?: string }) => {    //arrow function 
                         /> */}
                     </div>
                 </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Contact Us    ">
-                    <div className="flex flex-col space-y-4 text-sm">
+                <MenuItem setActive={setActive} active={active} item="Contact">
+                    {/* <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="/hobby">Hobby</HoveredLink>
                         <HoveredLink href="/individual">Individual</HoveredLink>
                         <HoveredLink href="/team">Team</HoveredLink>
                         <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-                    </div>
+                    </div> */}
                 </MenuItem>
+                <Link href={"/about"} >
+                    <MenuItem setActive={setActive} active={active} item="About Us" ></MenuItem>
+                </Link>
             </Menu>
         </div>
     )
