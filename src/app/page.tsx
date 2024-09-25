@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import Image from "next/image";
 import {FeaturedCourses }from "@/components/FeaturedCourses"
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       {/* <h1 className="text-2xl text-center" >chai or code</h1> */}
       <HeroSection />
       <FeaturedCourses />
+      <WhyChooseUs/>
     </main>
   );
 }
