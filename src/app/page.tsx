@@ -1,9 +1,10 @@
 import { HeroSection } from "@/components/HeroSection";
 import Image from "next/image";
-import {FeaturedCourses }from "@/components/FeaturedCourses"
+import { FeaturedCourses } from "@/components/FeaturedCourses"
 import WhyChooseUs from "@/components/WhyChooseUs";
 import MusicSchoolTestimonials from "@/components/TestinomialCards";
 import UpcomingWebinars from "@/components/UpcomingWebinars";
+import Instructors from "@/components/Instructors";
 
 export default function Home() {
   return (
@@ -11,9 +12,10 @@ export default function Home() {
       {/* <h1 className="text-2xl text-center" >chai or code</h1> */}
       <HeroSection />
       <FeaturedCourses />
-      <WhyChooseUs/>
-      <MusicSchoolTestimonials/>  
-      <UpcomingWebinars/>
+      <WhyChooseUs />
+      <MusicSchoolTestimonials />
+      <UpcomingWebinars />
+      <Instructors />
     </main>
   );
 }
