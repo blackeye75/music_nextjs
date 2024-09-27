@@ -7,13 +7,13 @@ const {
 
 // Plugin to add each Tailwind color as a global CSS variable
 function addVariablesForColors({ addBase, theme }: any) {
-  const allColors = flattenColorPalette(theme('colors'));
+  const allColors = flattenColorPalette(theme("colors"));
   const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, value]) => [`--${key}`, value])
   );
 
   addBase({
-    ':root': newVars,
+    ":root": newVars,
   });
 }
 
@@ -23,11 +23,13 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode:'class',
+  darkMode: "class",
   theme: {
     extend: {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       colors: {
         background: "var(--background)",
@@ -36,17 +38,22 @@ const config: Config = {
       keyframes: {
         spotlight: {
           "0%": {
-            opacity: '0',
+            opacity: "0",
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
-            opacity: '1',
+            opacity: "1",
             transform: "translate(-50%,-50%) scale(1.5)",
           },
         },
+        scroll:{
+          to:{
+            transform:"translate(-50%, -0.5rem)"
+          }
+        }
       },
     },
   },
-  plugins: [addVariablesForColors ],
+  plugins: [addVariablesForColors],
 };
 export default config;

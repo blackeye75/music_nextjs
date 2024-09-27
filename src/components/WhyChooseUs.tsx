@@ -38,8 +38,8 @@ const musicSchoolContent = [
 
 function WhyChooseUs() {
   return (
-    <div>
-        <StickyScroll content={musicSchoolContent} />
+    <div className="hide" >
+        <StickyScroll contentClassName="hide" content={musicSchoolContent} />
     </div>
   )
 }
