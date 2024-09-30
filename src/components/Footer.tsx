@@ -50,7 +50,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
+                    <h2 className="text-white text-lg text-center font-semibold mb-4">Follow Us</h2>
                     <div className="flex items-center flex-col">
                         <a
                             href="#"
