@@ -15,7 +15,7 @@ export const HeroSection = () => {
                 {/* <h1 className="mt-20 md:mt-0 text-4xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-[#122] to-[#120] text-stroke">
                     Master the Art of MusFFic
                 </h1> */}
-                <h1 className="font-['Dancing_Script'] pb-2 relative mt-20 md:mt-0 text-4xl md:text-9xl mb-3  font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#122] to-[#120] 
+                <h1 className="font-['Dancing_Script'] pb-2 relative mt-20 md:mt-0 text-4xl md:text-9xl mb-3  font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 
   before:content-['Master_the_Art_of_Music'] before:absolute before:inset-0 before:text-transparent before:bg-clip-text before:bg-gradient-to-b before:from-[#122] before:to-[#120] before:-webkit-text-stroke before:-webkit-text-stroke-2 before:text-stroke before:-z-10">
                     Master the Art of Music
                 </h1>
