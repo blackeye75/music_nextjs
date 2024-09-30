@@ -34,8 +34,10 @@ body {
   -webkit-text-stroke: 1px #171717;
 } */
 
-.hide::-webkit-scrollbar {
-  display: none;
+body {
+
+  overflow: auto;
+
 }
 
 .text-stroke {
