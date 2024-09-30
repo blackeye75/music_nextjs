@@ -11,6 +11,7 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.9.0",
+    "locomotive-scroll": "^4.1.4",
     "mini-svg-data-uri": "^1.4.4",
     "music_nextjs": "file:",
     "next": "14.2.11",
