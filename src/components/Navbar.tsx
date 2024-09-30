@@ -54,6 +54,7 @@ const Navbar = ({ className }: { className?: string }) => {    //arrow function 
                         /> */}
                     </div>
                 </MenuItem>
+                <Link href={"/contact"} >
                 <MenuItem setActive={setActive} active={active} item="Contact">
                     {/* <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="/hobby">Hobby</HoveredLink>
@@ -62,6 +63,7 @@ const Navbar = ({ className }: { className?: string }) => {    //arrow function 
                         <HoveredLink href="/enterprise">Enterprise</HoveredLink>
                     </div> */}
                 </MenuItem>
+                    </Link>
                 <Link href={"/about"} >
                     <MenuItem setActive={setActive} active={active} item="About Us" ></MenuItem>
                 </Link>
