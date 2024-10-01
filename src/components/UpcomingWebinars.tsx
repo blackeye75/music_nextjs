@@ -59,11 +59,13 @@ const UpcomingWebinars = () => {
                 </div>
                 <div className='m-10 ' >
                     <HoverEffect
+                   
                         items={featuredWebinars.map(webinar => (
                             {
                                 title: webinar.title,
                                 description: webinar.description,
-                                link: '/'
+                                link: webinar.slug
+                        
                             }
                         ))}
                     />
