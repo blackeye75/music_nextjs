@@ -12,7 +12,7 @@ const Footer = () => {
                         fostering a vibrant community of musicians.
                     </p>
                 </div>
-                <div className='flex items-center flex-col' >
+                <div className='flex sm:items-center flex-col' >
                     <h2 className="text-white text-lg font-semibold mb-4">Quick Links</h2>
                     <ul>
                         <li>
@@ -49,9 +49,9 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h2 className="text-white text-lg text-center font-semibold mb-4">Follow Us</h2>
-                    <div className="flex items-center flex-col">
+                <div className='sm:items-center flex flex-col'  >
+                    <h2 className="text-white text-lg sm:text-center font-semibold mb-4">Follow Us</h2>
+                    <div className="flex flex-col">
                         <a
                             href="#"
                             className="hover:text-white transition-colors duration-300"
