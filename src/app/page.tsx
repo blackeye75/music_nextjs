@@ -1,5 +1,4 @@
 import { HeroSection } from "@/components/HeroSection";
-import Image from "next/image";
 import { FeaturedCourses } from "@/components/FeaturedCourses"
 import WhyChooseUs from "@/components/WhyChooseUs";
 import MusicSchoolTestimonials from "@/components/TestinomialCards";
